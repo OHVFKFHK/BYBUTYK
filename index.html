@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>BYBUTYK — Донат</title>
+    <style>
+      :root {
+        --primary: #4facff;
+        --primary-dark: #2b88d9;
+        --bg: #eef6ff;
+        --text: #1a1a2e;
+        --card-bg: #ffffff;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: var(--bg);
+        color: var(--text);
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+        color: white;
+        padding: 2rem 1rem;
+        text-align: center;
+      }
+
+      header h1 {
+        margin: 0 0 0.5rem 0;
+        font-size: 2.2rem;
+      }
+
+      header p {
+        margin: 0;
+        opacity: 0.9;
+      }
+
+      .server-info {
+        text-align: center;
+        margin-top: 1rem;
+        font-weight: bold;
+        font-size: 1.1rem;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+
+      .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .card {
+        background: var(--card-bg);
+        border-radius: 12px;
+        padding: 1.5rem;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        text-align: center;
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+
+      .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+      }
+
+      .card h3 {
+        margin: 0 0 0.6rem 0;
+        color: var(--primary-dark);
+      }
+
+      .price {
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: #2b5f9e;
+        margin: 0.8rem 0;
+      }
+
+      .btn {
+        display: inline-block;
+        background: var(--primary);
+        color: white;
+        padding: 0.7rem 1.4rem;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: background 0.2s;
+      }
+
+      .btn:hover {
+        background: var(--primary-dark);
+      }
+
+      footer {
+        text-align: center;
+        padding: 2rem;
+        color: #555;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>BYBUTYK</h1>
+      <p>Донат-страница сервера Minecraft</p>
+      <div class="server-info">
+        IP: bubutyk.aternos.me
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="cards-grid">
+        <!-- Пират -->
+        <div class="card">
+          <h3>ПИРАТ</h3>
+          <p>Только в чате Max</p>
+          <div class="price">25 ₽</div>
+          <a href="https://max.ru/join/tfIgiUIWsX1H04iCdddq4xjUm8EF1evs98smIFnm3Pc" class="btn" target="_blank">Перейти в чат Max</a>
+        </div>
+
+        <!-- Дэмон -->
+        <div class="card">
+          <h3>ДЭМОН</h3>
+          <div class="price">50 ₽</div>
+          <a href="https://pay.cloudtips.ru/p/121bae1d" class="btn" target="_blank">Купить</a>
+        </div>
+
+        <!-- ПВП -->
+        <div class="card">
+          <h3>ПВП</h3>
+          <div class="price">150 ₽</div>
+          <a href="https://pay.cloudtips.ru/p/121bae1d" class="btn" target="_blank">Купить</a>
+        </div>
+
+        <!-- Архангел -->
+        <div class="card">
+          <h3>АРХАНГЕЛ</h3>
+          <div class="price">350 ₽</div>
+          <a href="https://pay.cloudtips.ru/p/121bae1d" class="btn" target="_blank">Купить</a>
+        </div>
+
+        <!-- Бог -->
+        <div class="card">
+          <h3>БОГ</h3>
+          <div class="price">1 500 ₽</div>
+          <a href="https://pay.cloudtips.ru/p/121bae1d" class="btn" target="_blank">Купить</a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      &copy; 2024 BYBUTYK. Сайт на GitHub Pages работает круглосуточно.
+    </footer>
+  </body>
+</html>
